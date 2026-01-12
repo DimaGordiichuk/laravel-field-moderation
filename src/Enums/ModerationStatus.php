@@ -1,6 +1,6 @@
 <?php
 
-namespace FieldModerations\Enums;
+namespace Gordiichuk\FieldModeration\Enums;
 
 enum ModerationStatus: string {
     case PENDING = 'pending';
