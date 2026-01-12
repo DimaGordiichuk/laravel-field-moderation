@@ -3,8 +3,38 @@
   "description": "Field-level moderation for Laravel Eloquent models",
   "type": "library",
   "license": "MIT",
+
+  "authors": [
+    {
+      "name": "Dima Gordiichuk",
+      "role": "Developer"
+    }
+  ],
+
   "require": {
-    "php": "^8.1",
-    "illuminate/support": "^10.0|^11.0"
-  }
+    "php": ">=8.2",
+    "illuminate/database": "^10 || ^11 || ^12.0",
+    "illuminate/support": "^10 || ^11 || ^12.0"
+  },
+
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Gordiichuk\\FieldModeration\\": "src/"
+    }
+  },
+
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Gordiichuk\\FieldModeration\\FieldModerationServiceProvider"
+      ]
+    }
+  },
+
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
